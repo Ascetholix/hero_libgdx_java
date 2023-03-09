@@ -5,7 +5,6 @@ import com.mygdx.game.oop.Unit.*;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Random;
-import java.util.Scanner;
 
 public class Main {
     public static ArrayList<Person> arrayListWhite = new ArrayList<>();
@@ -15,6 +14,15 @@ public class Main {
 
     public  ArrayList<Person> getArrayListDark() {
         return arrayListDark;
+    }
+    public ArrayList<Person> getArrayListWhite(){
+        return  arrayListWhite;
+    }
+    public ArrayList<Person> getArrayListAll(){
+        return  arrayListAll;
+    }
+    public String getInfo(int index){
+        return arrayListAll.get(index).getInfo();
     }
 
     public  void mainStep() {
