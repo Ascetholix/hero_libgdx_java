@@ -26,8 +26,6 @@ public class Main {
     }
 
     public  void mainStep() {
-
-//        Scanner scanner = new Scanner(System.in);
         arrayListDark.addAll(getUnit(UNITS, 1));
         arrayListWhite.addAll(getUnit(UNITS, 2));
 
@@ -36,22 +34,9 @@ public class Main {
 
         sortList(arrayListAll);
 //        printList(arrayListAll);
-
-//        while (true){
-//
-//            View.view();
-//            scanner.nextLine();
-//            for (Person person: arrayListAll) {
-//                if(arrayListWhite.contains(person)) person.step(arrayListWhite,arrayListDark);
-//                else person.step(arrayListDark,arrayListWhite);
-//
-//            }
-//            check(arrayListWhite);
-//            check(arrayListDark);
-//        }
     }
     public  void step(){
-//        View.view();
+        View.view();
         for (Person person: arrayListAll) {
             if (arrayListWhite.contains(person)) person.step(arrayListWhite, arrayListDark);
             else person.step(arrayListDark, arrayListWhite);
